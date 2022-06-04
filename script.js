@@ -32,7 +32,7 @@ addCells(16);
 
 const slider = document.querySelector('.slider');
 const sliderLabel = document.querySelector('.slideLabel')
-slider.addEventListener('change', function() {
+slider.addEventListener('input', function() {
     let val = this.value;
     sliderLabel.textContent = val;
     let rangeValue = parseInt(this.value);
