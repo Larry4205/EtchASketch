@@ -1,0 +1,18 @@
+p {
+    color: red;
+}
+
+#container {
+    height: 700px;
+    width: 700px;
+    border: 2px solid black;
+}
+
+.header {
+    text-align: center;
+}
+
+.container-wrap {
+    display: flex;
+    justify-content: center;
+}
