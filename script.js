@@ -10,3 +10,11 @@ for(let i = 0; i < 16; i++) {
     }
     myContainer.append(row);
 }
+
+const sketchCells = document.querySelectorAll('.sketchCell');
+sketchCells.forEach((cell) => {
+    cell.addEventListener('mouseenter', () => {
+        cell.classList.add('sketched');
+    });
+});
+
