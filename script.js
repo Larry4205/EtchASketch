@@ -2,6 +2,11 @@
 function addCells(numCells) {
     const myContainer = document.querySelector("#container");
 
+    //Remove all children from container
+    while(myContainer.lastElementChild) {
+        myContainer.removeChild(myContainer.lastElementChild);
+    }
+
     //create a grid of numCells x numCells
     for(let i = 0; i < numCells; i++) {
         let row = document.createElement('div');
@@ -31,5 +36,5 @@ slider.addEventListener('change', function() {
     let val = this.value;
     sliderLabel.textContent = val;
     let rangeValue = parseInt(this.value);
-    console.log(rangeValue);
+    addCells(rangeValue);
 });
