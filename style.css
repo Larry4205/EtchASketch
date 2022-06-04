@@ -6,6 +6,8 @@ p {
     height: 700px;
     width: 700px;
     border: 2px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -15,4 +17,15 @@ p {
 .container-wrap {
     display: flex;
     justify-content: center;
+}
+
+.sketchRow {
+    border: 2px solid red;
+    flex: 1;
+    display: flex;
+}
+
+.sketchCell {
+    border: 2px solid blue;
+    flex: 1;
 }
